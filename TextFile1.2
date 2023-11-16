@@ -1,0 +1,16 @@
+# the compiler to use
+CXX = g++
+
+# compiler flags
+CXXFLAGS = -Wall -g
+
+#the name to use for both the target source file and the output file
+TARGET = Calculate
+
+all: $(TARGET)
+
+$(TARGET): $(TARGET).cpp
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(TARGET).cpp
+
+	clean:
+		$(RM) $(TARGET)
