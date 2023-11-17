@@ -20,13 +20,21 @@ int main()
     {
         std::cin >> x >> oper >> y;
 
-        result = c.Calculate(x, oper, y);
+        if (oper == '/' && y == 0)
+        {
+            std::cout << "You attemped to divide by 0" << std::endl;
 
-        std::cout << "Result " << "of " << x << oper << y << " is: " << result << std::endl;
+            continue;
+        }
 
-        std::cout << "Please enter another one: " << std::endl;
+        else
+        {
+            result = c.Calculate(x, oper, y);
+
+            std::cout << "Result of " << x << oper << y << " is: " << result << std::endl;
+            std::cout << "Please enter another one: " << std::endl;
+        }
     }
-
 
     return 0;
 }
