@@ -36,7 +36,7 @@ int main()
     double result = 0.0;
     char oper = '+';
 
-    std::cout << "Calculator COnsole Application" << std::endl << std::endl;
+    std::cout << "Calculator Console Application" << std::endl << std::endl;
     std::cout << "Please enter the operation to perform. Format: a+b | a-b | a*b | a/b" << std::endl;
 
     Calculator c;
